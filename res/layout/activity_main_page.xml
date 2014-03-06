@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/taskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center_vertical"
+        android:background="#222">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我的任务"
+            android:textColor="#fff"
+            android:textSize="25sp"/>
+
+        <ImageButton
+            android:id="@+id/perinfoBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/icon_perinfo" />
+        
+        <ImageButton 
+            android:id="@+id/refreshBttn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:onClick="tastRefresh"
+            android:background="@drawable/icon_refresh"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/task_item"
+        android:clickable="true"
+        android:onClick="taskDetail"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/taskicon1" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:background="@drawable/icon_task_item"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/taskicon1"
+            android:padding="8dp"
+            android:text="任务1"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:text="状态:已完成"
+            android:textColor="#32CD32"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/task_item"
+        android:clickable="true"
+        android:onClick="taskDetail"
+        android:gravity="center_vertical">
+        <ImageView
+            android:id="@+id/taskicon2" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:scaleType="matrix"
+            android:background="@drawable/icon_task_item"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/taskicon2"
+            android:padding="8dp"
+            android:text="任务2"
+            android:textColor="#000"
+            android:textSize="17sp"/>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="3dp"
+            android:text="状态:未完成"
+            android:textColor="#CD0000"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    
+
+</LinearLayout>
